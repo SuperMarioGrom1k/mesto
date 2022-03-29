@@ -1,0 +1,16 @@
+.root {
+    margin: 0 auto;
+    max-width: 880px;
+    background-color: black;
+}
+
+@media screen and (max-width: 915px) {
+  .root {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .root {
+      width: 88%;
+  }
+}
