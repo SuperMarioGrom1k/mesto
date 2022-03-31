@@ -1,8 +1,11 @@
 .elements__like-btn {
+    border: none;
     padding: 5px;
     transition: opacity .8s ease 0s;
-    background-color: transparent;
-    opacity: 4;
-    border: 0;
+    opacity: 0.4;
 }
 
+.elements__like-btn {
+    opacity: 0.4;
+    cursor: pointer;
+}
