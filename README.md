@@ -22,3 +22,5 @@ https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4
 * Метатега корректного масштабирования страницы (@media).
 * Подключения локального шрифта Inter через директиву @font-face.
 * Применения основы Js
+
+Git Hub Pages ---https://supermariogrom1k.github.io/mesto/
