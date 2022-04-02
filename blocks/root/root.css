@@ -9,8 +9,3 @@
     width: 88%;
   }
 }
-@media screen and (max-width: 425px) {
-  .root {
-      width: 88%;
-  }
-}

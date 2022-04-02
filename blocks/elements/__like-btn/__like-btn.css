@@ -1,6 +1,15 @@
 .elements__like-btn {
+    background-color: white;
     border: none;
     padding: 5px;
-    transition: opacity .8s ease 0s;
+    opacity: 1;
+    outline: none;
+
+
+
 }
 
+.elements__like-btn:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
