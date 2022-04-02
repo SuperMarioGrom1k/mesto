@@ -8,51 +8,61 @@
 </head>
 <body class="root">
     <header class="header">
-        <div class="header__logo"></div>
+            <img src="image/logo.svg" alt="Место России" class="header__logo">
     </header>
 
 
     <main class="main">
         <section class="profile">
-            <div class="profile__avatar-wrapper">
-               <img src="image/image.jpg" alt="Изображение профиля" class="profile__avatar">
-            </div>
+            <img src="image/image.jpg" alt="Изображение профиля" class="profile__avatar">
             <div class="profile__info">
                 <div class="profile__container">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
                     <button type="button" class="profile__edit-button"></button>
+                </div>
+                <p class="profile__about">Исследователь океана</p>
             </div>
-                <h2 class="profile__about">Исследователь океана</h2>
-            </div>
-            <button type="button" class="profile__add-button"></button>
+            <button aria-label="open" type="button" class="profile__add-button"></button>
         </section>
 
         <section class="elements">
             <ul class="elements__container">
-                <li class="elements__card"><img src="image/karachaevsk.jpg" alt="Kарачаевск" class="elements__image">
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Карачаевск</h2>
-                        <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
-                <li class="elements__card"><img src="image/гора_ельбрус.png" alt="Гора Эльбрус" class="elements__image">
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Гора Эльбрус</h2>
-                    <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
-                <li class="elements__card"><img src="image/dombye.png" alt="Домбай" class="elements__image">
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Домбай</h2>
-                    <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
-                <li class="elements__card"><img src="image/karachaevsk.jpg" alt="Kарачаевск" class="elements__image">
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Карачаевск</h2>
-                        <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
-                <li class="elements__card"><img src="image/гора_ельбрус.png" alt="Гора Эльбрус" class="elements__image">
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Гора Эльбрус</h2>
-                    <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
-                <li class="elements__card"><img src="image/dombye.png" alt="Домбай" class="elements__image"/>
-                    <div class="elements__footer">
-                    <h2 class="elements__title">Домбай</h2>
-                    <button class="elements__like-btn"><img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/karachaevsk.jpg" alt="Kарачаевск" class="elements__image">
+                         <div class="elements__footer">
+                             <h2 class="elements__title">Карачаевск</h2>
+                                 <button type="button" class="elements__like-btn">
+                                     <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/гора_ельбрус.png" alt="Гора Эльбрус" class="elements__image">
+                        <div class="elements__footer">
+                             <h2 class="elements__title">Гора Эльбрус</h2>
+                                 <button type="button" class="elements__like-btn">
+                                     <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/dombye.png" alt="Домбай" class="elements__image">
+                         <div class="elements__footer">
+                             <h2 class="elements__title">Домбай</h2>
+                                  <button type="button" class="elements__like-btn">
+                                      <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/karachaevsk.jpg" alt="Kарачаевск" class="elements__image">
+                         <div class="elements__footer">
+                             <h2 class="elements__title">Карачаевск</h2>
+                                  <button type="button" class="elements__like-btn">
+                                      <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/гора_ельбрус.png" alt="Гора Эльбрус" class="elements__image">
+                        <div class="elements__footer">
+                             <h2 class="elements__title">Гора Эльбрус</h2>
+                                  <button type="button" class="elements__like-btn">
+                                      <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
+                <li class="elements__card">
+                    <img src="image/dombye.png" alt="Домбай" class="elements__image"/>
+                         <div class="elements__footer">
+                              <h2 class="elements__title">Домбай</h2>
+                                  <button type="button" class="elements__like-btn">
+                                      <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
             </ul>
         </section>
     </main>
@@ -64,19 +74,17 @@
 
         <div class="popup">
             <div class="popup__container">
-                <div class="popup__body">
                     <div class="popup__content">
                         <h2 class="popup__title">Редактировать профиль</h2>
-                        <form action="#" class="popup__form">
-                            <input type="text"  class="popup__input popup__input_name" value="Жак-Ив Кусто">
-                            <input type="text" class="popup__input popup__input_subtext" value="Исследователь океана">
+                            <form action="#" name="popupForm" class="popup__form">
+                                    <input type="text"  class="popup__input popup__input_name"  id="userName" name="userName" value="">
+                                    <input type="text" class="popup__input popup__input_subtext" id="userAbout" name="userAbout" value="">
                             <button type="submit" class="popup__submit">Сохранить</button>
                         </form>
                     </div>
-                </div>
-                <a href="#" class="popup__close close-popup">
+                <button type="button" class="popup__close close-popup">
                     <img src="./image/close_icon.svg" alt="крест" >
-                </a>
+                </button>
             </div>
         </div>
 <script src="script/index.js"></script>
