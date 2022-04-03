@@ -4,12 +4,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 880px;
-}
 
-@media screen and (max-width: 915px) {
-    .profile {
-        width: 88%;
-    }
 }
 
 @media screen and (max-width: 620px) {

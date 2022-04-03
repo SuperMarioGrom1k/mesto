@@ -1,16 +1,14 @@
 .popup__container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: white;
     width: 282px;
-    height: 322px;
     border-radius: 10px;
-    padding: 0 19px;
     position: relative;
 }
 
 @media screen and (min-width: 768px) {
     .popup__container {
         width: 430px;
-        height: 330px;
         border-radius: 10px;
     }
 }

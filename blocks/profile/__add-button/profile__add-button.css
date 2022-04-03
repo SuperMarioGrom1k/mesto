@@ -3,13 +3,14 @@
     left: 200px;
     width: 150px;
     height: 50px;
-    background-color: transparent;
+    background-color: black;
     border: 2px solid #fff;
     border-radius: 2px;
-    background-image: url(../../../image/add_button.svg);
+    background-image: url(../../../image/krest.svg);
     background-position: center;
     background-repeat: no-repeat;
     transition: .2s;
+
 }
 
 .profile__add-button:hover {
