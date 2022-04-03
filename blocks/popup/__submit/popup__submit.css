@@ -1,5 +1,5 @@
 .popup__submit {
-    font-family: Inter  Arial, Helvetica, sans-serif;;
+    font-family: Inter  Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -11,8 +11,6 @@
     border: none;
     border-radius: 2px;
     transition: opacity .8s ease 0s;
-
-
 }
 
 .popup__submit:hover {
