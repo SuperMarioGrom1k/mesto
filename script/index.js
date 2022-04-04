@@ -1,4 +1,3 @@
-
 const editProfile = document.querySelector(".profile__edit-button");
 const modalWindow = document.querySelector(".popup");
 const modalCloseBtn = modalWindow.querySelector('.popup__close');
@@ -10,32 +9,32 @@ let subTextProfile = document.querySelector('.profile__about');
 
 
 function toggleModalWindow() {
-    modalWindow.classList.toggle('popup__open');
+    modalWindow.classList.toggle('popup_open');
+
 }
 
+function toggleModalCloseBtn() {
+    modalCloseBtn.classList.toggle('popup__close')
 
-function formSubmitHandler(evt) {
+
+}
+
+    nameInput.value = nameProfile.textContent;
+    subTextInput.value = subTextProfile.textContent;
+
+
+
+
+    function formSubmitHandler(evt) {
     evt.preventDefault();
-
     nameProfile.textContent = nameInput.value;
     subTextProfile.textContent = subTextInput.value;
+    toggleModalWindow()
 
 }
 
 
-    nameInput.value = nameProfile.innerText;
-    subTextInput.value = subTextProfile.innerText;
-
-
-
-formElement.addEventListener('submit', formSubmitHandler);
+modalCloseBtn.addEventListener('click', toggleModalCloseBtn);
 editProfile.addEventListener('click', toggleModalWindow);
 modalCloseBtn.addEventListener('click', toggleModalWindow);
-
-
-
-
-
-
-
-
+formElement.addEventListener('submit', formSubmitHandler);
