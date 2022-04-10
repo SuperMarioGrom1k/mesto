@@ -1,4 +1,15 @@
 .main {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    max-width: 880px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 915px) {
+    .main {
+        width: 88%;
+    }
 }

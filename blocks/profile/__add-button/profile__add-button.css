@@ -3,14 +3,14 @@
     left: 200px;
     width: 150px;
     height: 50px;
-    background-color: black;
+    background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
     background-image: url(../../../image/krest.svg);
+    background-size: 22px;
     background-position: center;
     background-repeat: no-repeat;
     transition: .2s;
-
 }
 
 .profile__add-button:hover {
@@ -22,5 +22,6 @@
     .profile__add-button {
         width: 100%;
         max-width: 320px;
+        background-size: 16px;
     }
 }

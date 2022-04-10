@@ -4,12 +4,9 @@
     padding: 5px;
     opacity: 1;
     outline: none;
-
-
-
 }
 
 .elements__like-btn:hover {
     cursor: pointer;
-    opacity: 0.4;
+    opacity: .5;
 }
