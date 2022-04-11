@@ -1,25 +1,22 @@
 .profile__about {
-    margin: 0;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    margin: 0 16px 0 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    color: #fff;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-    max-width: 75%;
+    max-width: 526px;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 700px) {
     .profile__about {
+        margin-top: 0;
         font-size: 14px;
         line-height: 17px;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .profile__about {
-        margin: 0 auto;
+        max-width: 282px;
+        text-align: center;
     }
 }

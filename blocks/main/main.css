@@ -1,15 +1,9 @@
 .main {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    box-sizing: border-box;
-    max-width: 880px;
-    background-color: black;
-    margin: 0 auto;
+    padding: 0;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 901px) {
     .main {
-        width: 88%;
+        padding: 0 19px;
     }
 }

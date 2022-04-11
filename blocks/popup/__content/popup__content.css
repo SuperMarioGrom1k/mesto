@@ -1,7 +1,12 @@
 .popup__content {
-    padding: 22px 25px 22px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    margin: auto;
 }
 
+
+@media screen and (max-width:520px) {
+    .popup__content {
+        max-width: calc(100vw - 48px);
+        padding: 0;
+    }
+}

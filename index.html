@@ -7,20 +7,21 @@
     <link href="pages/index.css" rel="stylesheet">
 </head>
 <body class="root">
-    <header class="header">
-      <img src="image/logo.svg" alt="Место России" class="header__logo">
-    </header>
-
-
+    <div class="container">
+      <header class="header">
+         <img src="image/logo.svg" alt="Место России" class="header__logo">
+      </header>
     <main class="main">
         <section class="profile">
             <img src="image/image.jpg" alt="Изображение профиля" class="profile__avatar">
-              <div class="profile__info">
-                <div class="profile__container">
+             <div class="profile__info-container">
+               <div class="profile__info">
+                 <div class="profile__container">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
                     <button type="button" class="profile__edit-button"></button>
-                </div>
+                 </div>
                   <p class="profile__about">Исследователь океана</p>
+              </div>
             </div>
             <button aria-label="open" type="button" class="profile__add-button"></button>
         </section>
@@ -65,25 +66,22 @@
                               <img src="./image/like_disabled.svg" alt="лайк"></button></div></li>
             </ul>
         </section>
-
-
-
     <footer class="footer">
         <p class="footer__copyrights">&copy; 2022 Mesto Russia</p>
     </footer>
     </main>
-
+    </div>
         <div class="popup">
             <div class="popup__container">
+                <button type="button" class="popup__close close-popup"></button>
                     <div class="popup__content">
-                        <h2 class="popup__title">Редактировать профиль</h2>
-                            <form action="#" name="popupForm" class="popup__form">
-                                    <input type="text"  class="popup__input popup__input-name"  id="userName" name="userName" value="">
-                                    <input type="text" class="popup__input popup__input-subtext" id="userAbout" name="userAbout" value="">
-                            <button type="submit" class="popup__submit">Сохранить</button>
+                        <form action="#" name="popupForm" class="popup__form">
+                         <h2 class="popup__title">Редактировать профиль</h2>
+                           <input type="text"  class="popup__input popup__input-name"  id="userName" name="userName" value="">
+                           <input type="text" class="popup__input popup__input-subtext" id="userAbout" name="userAbout" value="">
+                          <button type="submit" class="popup__submit">Сохранить</button>
                         </form>
                     </div>
-                <button type="button" class="popup__close close-popup"></button>
             </div>
         </div>
 <script src="script/index.js"></script>

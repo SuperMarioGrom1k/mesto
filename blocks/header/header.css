@@ -1,15 +1,14 @@
 .header {
-    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-    min-height: 84px;
-    display: flex;
-    align-items: center;
-
+    padding: 45px 0 40px;
+    border-bottom: 1px solid rgb(84, 84, 84, 0.7);
+    margin: 0 auto 40px;
 }
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (max-width: 320px) {
     .header {
-        min-height: 109px;
-        width: 100%;
+        padding-top: 28px;
     }
 }
 
