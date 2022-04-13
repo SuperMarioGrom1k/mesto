@@ -6,9 +6,12 @@ let nameInput = formElement.querySelector('.popup__input-name');
 let subTextInput = formElement.querySelector('.popup__input-subtext');
 let nameProfile = document.querySelector('.profile__name');
 let subTextProfile = document.querySelector('.profile__about');
+const openPopupHandler = () => modalWindow.classList.contains('popup')  && modalWindow.classList.add('popup_open');
+const closePopupHandler = () => modalWindow.classList.contains('popup') && (nameInput.value = nameProfile.textContent)
+    && (subTextInput.value = subTextProfile.textContent)  &&  modalWindow.classList.remove('popup_open');
 
-const openPopupHandler = () => modalWindow.classList.contains('popup') && modalWindow.classList.add('popup_open');
-const closePopupHandler = () => modalWindow.classList.contains('popup') && modalWindow.classList.remove('popup_open');
+nameInput.value = nameProfile.textContent;
+subTextInput.value = subTextProfile.textContent;
 
 
 function formSubmitHandler(evt) {
@@ -17,7 +20,6 @@ function formSubmitHandler(evt) {
     subTextProfile.textContent = subTextInput.value;
     closePopupHandler();
 }
-
 
 
 editProfile.addEventListener('click', openPopupHandler);
