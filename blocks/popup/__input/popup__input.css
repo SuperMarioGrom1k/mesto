@@ -1,8 +1,7 @@
 .popup__input {
     position: relative;
-    margin-bottom: 18px;
+    margin: 0 auto 30px;
     display: flex;
-    height: 40px;
     width: 100%;
     color: #000;
     border: 0;
@@ -17,17 +16,6 @@
 
 .popup__input:focus {
     outline: none;
-}
-
-@media screen and (max-width:520px) {
-    .popup__input {
-        height: 36px;
-    }
-}
-
-
-.popup__input:first-of-type {
-    margin-top: 41px;
 }
 
 .popup__input:last-of-type {
